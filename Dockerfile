@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Expose port 9876 for the Flask development server to listen on
+# Expose port 5000 for the Flask development server to listen on
 EXPOSE 5000
 
 # Define the command to run the Flask development server
