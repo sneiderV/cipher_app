@@ -11,6 +11,7 @@
     `docker run -d -p 5000:5000 cipher-app`
 
 4. Do a request
+   
 `
      curl --location 'http://127.0.0.1:5000/cipher' \
 --header 'Content-Type: application/json' \
