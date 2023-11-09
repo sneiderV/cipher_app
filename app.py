@@ -31,9 +31,14 @@ class Decipher_Message(Resource):
             d = decrypt(message, key)
                         
             return jsonify({ "deciphered": "{}".format("".join(d))})
+    
+class Ping(Resource):
+    def get(self):
+         return 'pong'
 
 api.add_resource(Cipher_Message, '/cipher')     
 api.add_resource(Decipher_Message, '/decipher')
+api.add_resource(Ping, '/ping')
 
 if __name__ == '__main__':
     app.run(debug=True)

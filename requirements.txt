@@ -1,4 +1,4 @@
 Flask
 Flask-RESTful
 flask-marshmallow
-Werkzeug
+Werkzeug==2.2.2
